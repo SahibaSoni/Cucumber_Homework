@@ -1,0 +1,10 @@
+[
+  {
+    "line": 1,
+    "name": "Techfios bank and cash New Account Functionality",
+    "description": "",
+    "id": "techfios-bank-and-cash-new-account-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/BankAndCash.feature"
+  }
+]
