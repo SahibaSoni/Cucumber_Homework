@@ -6,13 +6,17 @@ formatter.feature({
   "id": "techfios-bank-and-cash-new-account-functionality",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
+formatter.before({
+  "duration": 2621754900,
+  "status": "passed"
+});
+formatter.scenario({
   "line": 3,
   "name": "User should be able to login with valid credentials",
   "description": "and open a new account",
   "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
@@ -21,17 +25,17 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "User enters the \"\u003cusername\u003e\"",
+  "name": "User enters the username as \"demo@techfios.com\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "User enters the \"\u003cpassword\u003e\"",
+  "name": "User enters the password as \"abc123\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "User clicks on \"\u003clogin\u003e\"",
+  "name": "User clicks on login",
   "keyword": "And "
 });
 formatter.step({
@@ -41,12 +45,12 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "User clicks on \"\u003cbankCash\u003e\"",
+  "name": "User clicks on bankCash",
   "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "User clicks on \"\u003cnewAccount\u003e\"",
+  "name": "User clicks on newAccount",
   "keyword": "And "
 });
 formatter.step({
@@ -98,5 +102,106 @@ formatter.step({
   "line": 21,
   "name": "User should be able to validate account created successfully",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "BankAndCashSteps.User_is_on_the_techfios_login_page()"
+});
+formatter.result({
+  "duration": 1323241200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "demo@techfios.com",
+      "offset": 29
+    }
+  ],
+  "location": "BankAndCashSteps.user_enters_username_as(String)"
+});
+formatter.result({
+  "duration": 3142701200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "abc123",
+      "offset": 29
+    }
+  ],
+  "location": "BankAndCashSteps.user_enters_the(String)"
+});
+formatter.result({
+  "duration": 3102940100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BankAndCashSteps.user_clicks_on_login()"
+});
+formatter.result({
+  "duration": 5727206400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BankAndCashSteps.user_should_land_on_Dashboard_page()"
+});
+formatter.result({
+  "duration": 15164600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BankAndCashSteps.user_clicks_on_bankCash()"
+});
+formatter.result({
+  "duration": 3088602800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BankAndCashSteps.user_clicks_on_newAccount()"
+});
+formatter.result({
+  "duration": 3706215800,
+  "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

@@ -28,51 +28,53 @@ public class BankAndCashPage {
 
 	public void insertUserName(String username) {
 		UserName.sendKeys(username);
-		// try {
-		// Thread.sleep(3000);
-		// } catch (InterruptedException e) {
-		// e.printStackTrace();
-		// }
+		 try {
+		 Thread.sleep(3000);
+		 } catch (InterruptedException e) {
+		 e.printStackTrace();
+		 }
 	}
 
 	public void insertPassword(String password) {
 		Password.sendKeys(password);
-		// try {
-		// Thread.sleep(3000);
-		// } catch (InterruptedException e) {
-		// e.printStackTrace();
-		// }
+		 try {
+		 Thread.sleep(3000);
+		 } catch (InterruptedException e) {
+		 e.printStackTrace();
+		 }
 	}
 
 	public void clickSignIn() {
 		SignInButton.click();
-		// try {
-		// Thread.sleep(3000);
-		// } catch (InterruptedException e) {
-		// e.printStackTrace();
-		// }
+		 try {
+		 Thread.sleep(3000);
+		 } catch (InterruptedException e) {
+		 e.printStackTrace();
+		 }
 	}
 
-	public String getPageTitle(WebDriver driver) {
-		return driver.getTitle();
+	public String getPageTitle(WebDriver driver) 
+	{
+		 return driver.getTitle();
+		
 	}
 	
 	public void clickBankAndCash() {
 		BankAndCash.click();
-		// try {
-		// Thread.sleep(3000);
-		// } catch (InterruptedException e) {
-		// e.printStackTrace();
-		// }
+		 try {
+		 Thread.sleep(3000);
+		 } catch (InterruptedException e) {
+		 e.printStackTrace();
+		 }
 	}
 
 	public void clickNewAccount() {
 		NewAccount.click();
-		// try {
-		// Thread.sleep(3000);
-		// } catch (InterruptedException e) {
-		// e.printStackTrace();
-		// }
+		 try {
+		 Thread.sleep(3000);
+		 } catch (InterruptedException e) {
+		 e.printStackTrace();
+		 }
 	}
 
 	

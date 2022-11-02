@@ -1,6 +1,215 @@
 [
   {
     "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2621754900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankAndCashSteps.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should be able to login with valid credentials",
+        "description": "and open a new account",
+        "id": "techfios-bank-and-cash-new-account-functionality;user-should-be-able-to-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1323241200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the techfios login page",
+            "match": {
+              "location": "BankAndCashSteps.User_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3142701200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters the username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 29
+                }
+              ],
+              "location": "BankAndCashSteps.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3102940100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters the password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 29
+                }
+              ],
+              "location": "BankAndCashSteps.user_enters_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5727206400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on login",
+            "match": {
+              "location": "BankAndCashSteps.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15164600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "BankAndCashSteps.user_should_land_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3088602800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on bankCash",
+            "match": {
+              "location": "BankAndCashSteps.user_clicks_on_bankCash()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3706215800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on newAccount",
+            "match": {
+              "location": "BankAndCashSteps.user_clicks_on_newAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User enters \"\u003caccountTitle\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User enters \"\u003cdescription\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User enters \"\u003cinitialBalance\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User enters \"\u003caccountNumber\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User enters \"\u003ccontactPerson\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "User enters \"\u003cPhone\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "User enters \"\u003caccountTitle\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "User enters \"\u003cinternetBankingURL\u003e\" in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "User clicks on \"\u003cnewAccount\u003e\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "User should be able to validate account created successfully",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
     "name": "Techfios bank and cash New Account Functionality",
     "description": "",
     "id": "techfios-bank-and-cash-new-account-functionality",
