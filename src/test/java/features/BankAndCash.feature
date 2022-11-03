@@ -1,21 +1,25 @@
 Feature: Techfios bank and cash New Account Functionality 
 
-Scenario: User should be able to login with valid credentials 
+Scenario Outline: User should be able to login with valid credentials 
 	and open a new account	
 	Given User is on the techfios login page 
-	When User enters the username as "demo@techfios.com"
-	When User enters the password as "abc123"
-	And User clicks on login
+	When User enters the username as "<username>"
+	When User enters the password as "<password>"
+	Then User clicks on login
 	Then User should land on Dashboard page 
-	And User clicks on bankCash
-	And User clicks on newAccount
-	And User enters "<accountTitle>" in accounts page 
-	And User enters "<description>" in accounts page 
-	And User enters "<initialBalance>" in accounts page 
-	And User enters "<accountNumber>" in accounts page 
-	And User enters "<contactPerson>" in accounts page 
-	And User enters "<Phone>" in accounts page 
-	And User enters "<accountTitle>" in accounts page 
-	And User enters "<internetBankingURL>" in accounts page 
-	And User clicks on "<newAccount>"
+  Then User clicks on bankCash
+	Then User clicks on newAccount
+	Then User enters as accountTitle as "<accountTitle>" in accounts page 
+	Then User enters description as "<description>" in accounts page 
+	Then User enters initialBalance as "<initialBalance>" in accounts page 
+	Then User enters accountNumber as "<accountNumber>" in accounts page 
+	Then User enters contactPerson as "<contactPerson>" in accounts page 
+	Then User enters Phone as "<Phone>" in accounts page  
+	Then User enters internetBankingURL as "<internetBankingURL>" in accounts page 
+	Then User clicks on submitButton
 	Then User should be able to validate account created successfully
+
+	
+Examples:
+|username |password |accountTitle |description |initialBalance |accountNumber |contactPerson |Phone |internetBankingURL |
+|demo@techfios.com |abc123 |demoAcc  |	SavingAcc | 10000 | 1234 | Sahiba | 1234567890 | https://www.bankofamerica.com/ |

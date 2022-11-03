@@ -8,13 +8,14 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
+import page.AccountValidationPage;
 import page.BankAndCashPage;
 import page.TestBase;
 
 public class BankAndCashSteps extends TestBase{
 	
-	private static final String username = null;
 	BankAndCashPage bankAcc;
+	AccountValidationPage accValid;
 	
 	
 	@Before
@@ -48,7 +49,7 @@ public class BankAndCashSteps extends TestBase{
 	    
 	}
 
-	@And("^User clicks on login$")
+	@Then("^User clicks on login$")
 	public void user_clicks_on_login()
 	{
 	   bankAcc.clickSignIn();
@@ -73,6 +74,55 @@ public class BankAndCashSteps extends TestBase{
 	{
 	   bankAcc.clickNewAccount();
 	}
+	
+	@Then("^User enters as accountTitle as \"([^\"]*)\" in accounts page$")
+	public void user_enters_as_accountTitle_as_in_accounts_page(String accTitle)  {
+	    bankAcc.insertAccountTitle(accTitle + generateRandomNum(999));
+	}
+
+	@Then("^User enters description as \"([^\"]*)\" in accounts page$")
+	public void user_enters_description_as_in_accounts_page(String desc) {
+	    bankAcc.insertdescreption(desc);
+	}
+
+	@Then("^User enters initialBalance as \"([^\"]*)\" in accounts page$")
+	public void user_enters_initialBalance_as_in_accounts_page(String bal) {
+	 
+		bankAcc.insertIntialBalance(bal);
+	}
+
+	@Then("^User enters accountNumber as \"([^\"]*)\" in accounts page$")
+	public void user_enters_accountNumber_as_in_accounts_page(String accNum) {
+	   bankAcc.insertAccountNumber(accNum);
+	}
+
+	@Then("^User enters contactPerson as \"([^\"]*)\" in accounts page$")
+	public void user_enters_contactPerson_as_in_accounts_page(String conPer) {
+	 bankAcc.insertContactPerson(conPer);   
+	}
+
+	@Then("^User enters Phone as \"([^\"]*)\" in accounts page$")
+	public void user_enters_Phone_as_in_accounts_page(String conPh) {
+	 bankAcc.insertContactPhone(conPh);   
+	}
 
 
+	@Then("^User enters internetBankingURL as \"([^\"]*)\" in accounts page$")
+	public void user_enters_internetBankingURL_as_in_accounts_page(String bankUrl) {
+	    
+		bankAcc.insertBankingUrl(bankUrl);
+	}
+
+	@Then ("^User clicks on submitButton$")
+	public void User_clicks_on_submitButton()
+	{
+		bankAcc.clickSubmitButton();
+	}
+	
+	@Then("^User should be able to validate account created successfully$")
+	public void User_should_be_able_to_validate_account_created_successfully()
+	{
+		accValid = PageFactory.initElements(driver, AccountValidationPage.class);
+		accValid.validateAccountCreation();
+	}
 }

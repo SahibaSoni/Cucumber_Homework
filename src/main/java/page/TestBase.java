@@ -1,5 +1,6 @@
 package page;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -20,5 +21,13 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		return driver;
 	}
+	
+	public int generateRandomNum(int num)
+	{
+		Random rn = new Random();
+		int randomNum = rn.nextInt(num);
+		return randomNum;
+	}
+	
 
 }
